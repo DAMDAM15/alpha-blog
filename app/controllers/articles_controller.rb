@@ -41,7 +41,7 @@
       
     end
     
-    private #anythig below it is private method
+    private #anythig below it is private method / private method only work current file
     
     def set_article 
      @article = Article.find(params[:id])
