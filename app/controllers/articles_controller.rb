@@ -5,7 +5,9 @@
     end
     
     def index
-      @articles = Article.all #any variable is ok but articles makes sense so we're using
+      @articles = Article.paginate(page: params[:page], per_page: 5) 
+        #any variable is ok but articles make sense so we're using
+      
     end
     
     def new
