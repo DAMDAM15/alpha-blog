@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
       else
         flash.now[:alert] = "There was someting wrong with your login detail"
         render 'new'
-    end
+      end
         
   end
   
